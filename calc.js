@@ -1,5 +1,7 @@
-document.addEventListener.getElementById('digit').("click", displayInput);
 
-displayInput = function(){
-  document.getElementById("display").innerHTML = document.getElementByClassName("digit")
-};
+  document.getElementById('1').addEventListener("click", displayInput);
+
+  function displayInput() {
+    alert(1)
+      //document.getElementById("display").innerHTML = 1;
+  };
