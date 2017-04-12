@@ -1,61 +1,53 @@
-<!DOCTYPE html>
 <html>
-
 <head>
-    <title>Calculator</title>
-
+  <title>Calculator</title>
+  <link rel="stylesheet" href="myCalc2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
-    More detailed HTML for basic calculator
+  </div>
+  <div id="display">
+    0
+  </div>
+  <!--Numbers-->
+  <div>
 
-    <FORM name="Calculator">
-        <table border="4">
-            <!--OUTER BORDER OF CALCULATOR, PANELS-->
-            <tr>
-                <!--TOP PANEL------>
-                <td colspan="2">A Simple JavaScript Calculator<br>
-                    <input id="display" type="text" maxlength="40" size="30" name="Display">
+    <table>
+      <tr>
+        <td><button class="button" onclick="concatenateNumbers(7)">7</button></td>
+        <td><button class="button" onclick="concatenateNumbers(8)">8</button></td>
+        <td><button class="button" onclick="concatenateNumbers(9)">9</button></td>
+        <td><button class="button" onclick="calculate('+')">+</button></td>
+      </tr>
 
-                </td>
-            </tr>
-            <!--END TOP PANEL--->
-            <tr>
-                <td>
-                    <!--LEFT PANEL------>
-                    <table>
-                        <tr>
 
-                            <td><input type="button" value="C"></td>
-                            <td><input type="button" value="-"></td>
-                            <td><input type="button" value="/"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="button" value="7"></td>
-                            <td><input type="button" value="8"></td>
-                            <td><input type="button" value="9"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="button" value="4"></td>
-                            <td><input type="button" value="5"></td>
-                            <td><input type="button" value="6"></td>
-                        </tr>
-                        <tr>
-                            <td><input class="digit" id="1" type="button" value="1"></td>
-                            <td><input class="digit" id="2" type="button" value="2"></td>
-                            <td><input class="digit" id="3" type="button" value="3"></td>
-                        </tr>
-                        <td><input type="button" value="0"></td>
-                        <td><input type="button" value="."></td>
-                        <td><input type="button" value="="></td>
-                        <td><input type="button" value="*"></td>
-                        <td><input type="button" value="+"></td>
+      <tr>
+        <td><button class="button" onclick="concatenateNumbers(4)">4</button></td>
+        <td><button class="button" onclick="concatenateNumbers(5)">5</button></td>
+        <td><button class="button" onclick="concatenateNumbers(6)">6</button></td>
+        <td><button class="button" onclick="calculate('-')">-</button></td>
+      </tr>
 
-                    </table>
-                </td>
 
-    <script src="calc.js"></script>
+      <tr>
+        <td><button class="button" onclick="concatenateNumbers(1)">1</button></td>
+        <td><button class="button" onclick="concatenateNumbers(2)">2</button></td>
+        <td><button class="button" onclick="concatenateNumbers(3)">3</button></td>
+        <td><button class="button" onclick="calculate('*')">x</button></td>
+      </tr>
+
+      <tr>
+        <td><button class="button" onclick="clearCalculator()">C</button></td>
+        <td><button class="button" onclick="concatenateNumbers(0)">0</button></td>
+        <td><button class="button" onclick="calculate('=')">=</button></td>
+        <td><button class="button" onclick="calculate('/')">/</button></td>
+      </tr>
+
+    </table>
+
+  </div>
+  <script src="myCalc2.js"></script>
 </body>
-
-</html>
